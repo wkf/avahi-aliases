@@ -1,0 +1,10 @@
+[Unit]
+Description=avahi subdomain announcer
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/avahi-alias start
+ExecStop=/usr/local/bin/avahi-alias stop
+
+[Install]
+WantedBy=multi-user.target

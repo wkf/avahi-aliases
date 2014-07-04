@@ -43,6 +43,7 @@ setup(
         ('/etc/init/',              ['avahi_aliases/etc/init/avahi-aliases.conf'] ),
         ('/etc/avahi/',             ['avahi_aliases/etc/avahi/aliases']),
         ('/etc/avahi/aliases.d/',   ['avahi_aliases/etc/avahi/aliases.d/default']),
+        ('/lib/systemd/system/',    ['avahi_aliases/lib/systemd/system/avahi-aliases.service'] ),
     ],
     zip_safe = False,
 )
